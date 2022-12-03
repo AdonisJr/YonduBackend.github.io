@@ -7,6 +7,10 @@ To start the development server.
     4. Go to backend/
     5. npm install - to install all dependencies
     3. npm run dev - to run the server
+    
+Database
+    My SQL Workbench
+    Open Mysql Workbench and Import yondoDatabase.sql located inside Database Folder.
 
 Here are the step by step instructions on how to test API endpoint.
     1. Download and Install postman (https://www.postman.com/)
@@ -23,7 +27,9 @@ Here are the step by step instructions on how to test API endpoint.
                 status: 400 - Invalid email or password.
                         200 - Successfully login.
 
-
+            NOTE: Get Athorization Token you need to login using your email and password. 
+                so basically if you dont have account yet. need to add user first.
+            
         Add User
             Endpoint: post - http://localhost:3000/users
             Body Parameters:
