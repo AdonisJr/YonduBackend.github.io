@@ -17,7 +17,7 @@ router.route('/users')
 
             return res.status(200).json({
                 status: 200,
-                message: `Successfully retrieve ( ${rows.length} records )`,
+                message: `Successfully retrieved ( ${rows.length} records )`,
                 data: rows
             })
         })

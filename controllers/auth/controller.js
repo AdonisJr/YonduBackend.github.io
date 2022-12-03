@@ -4,7 +4,7 @@ const bcrypt = require('bcrypt');
 const db = require('../../database/database');
 const JWT = require('../../middlewares/jwt');
 
-router.post('/', (req, res) => {
+router.post('/token', (req, res) => {
     // check if the required parameter are empty
     if (!req.body.email || !req.body.password)
         return res.status(422).json({ status: 422, message: 'Parameter Required ( email, password )' })
